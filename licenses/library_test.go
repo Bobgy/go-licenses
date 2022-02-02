@@ -45,28 +45,28 @@ func TestLibraries(t *testing.T) {
 	}{
 		{
 			desc:       "Detects direct dependency",
-			importPath: "github.com/google/go-licenses/licenses/testdata/direct",
+			importPath: "github.com/Bobgy/go-licenses/v2/licenses/testdata/direct",
 			wantLibs: []string{
-				"github.com/google/go-licenses/licenses/testdata/direct",
-				"github.com/google/go-licenses/licenses/testdata/indirect",
+				"github.com/Bobgy/go-licenses/v2/licenses/testdata/direct",
+				"github.com/Bobgy/go-licenses/v2/licenses/testdata/indirect",
 			},
 		},
 		{
 			desc:       "Detects transitive dependency",
-			importPath: "github.com/google/go-licenses/licenses/testdata",
+			importPath: "github.com/Bobgy/go-licenses/v2/licenses/testdata",
 			wantLibs: []string{
-				"github.com/google/go-licenses/licenses/testdata",
-				"github.com/google/go-licenses/licenses/testdata/direct",
-				"github.com/google/go-licenses/licenses/testdata/indirect",
+				"github.com/Bobgy/go-licenses/v2/licenses/testdata",
+				"github.com/Bobgy/go-licenses/v2/licenses/testdata/direct",
+				"github.com/Bobgy/go-licenses/v2/licenses/testdata/indirect",
 			},
 		},
 		{
 			desc:       "Build tagged package",
-			importPath: "github.com/google/go-licenses/licenses/testdata/tags",
+			importPath: "github.com/Bobgy/go-licenses/v2/licenses/testdata/tags",
 			goflags:    "-tags=tags",
 			wantLibs: []string{
-				"github.com/google/go-licenses/licenses/testdata/tags",
-				"github.com/google/go-licenses/licenses/testdata/indirect",
+				"github.com/Bobgy/go-licenses/v2/licenses/testdata/tags",
+				"github.com/Bobgy/go-licenses/v2/licenses/testdata/indirect",
 			},
 		},
 	} {

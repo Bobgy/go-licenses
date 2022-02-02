@@ -24,7 +24,7 @@ import (
 	"time"
 
 	"github.com/golang/glog"
-	"github.com/google/go-licenses/internal/third_party/pkgsite/source"
+	"github.com/Bobgy/go-licenses/v2/internal/third_party/pkgsite/source"
 	"golang.org/x/tools/go/packages"
 )
 
@@ -221,7 +221,7 @@ func (l *Library) FileURL(ctx context.Context, filePath string) (string, error) 
 		// This always happens for the module in development.
 		// Note#1 if we pass version=HEAD to source.ModuleInfo, github tag for modules not at the root
 		// of the repo will be incorrect, because there's a convention that:
-		// * I have a module at github.com/google/go-licenses/submod.
+		// * I have a module at github.com/Bobgy/go-licenses/v2/submod.
 		// * The module is of version v1.0.0.
 		// Then the github tag should be submod/v1.0.0.
 		// In our case, if we pass master as version, the result commit will be submod/HEAD which is incorrect.
@@ -232,7 +232,7 @@ func (l *Library) FileURL(ctx context.Context, filePath string) (string, error) 
 		// always refers to the default branch, so it's better than
 		// both of master/main when we do not know which branch is default.
 		// Examples:
-		// * https://github.com/google/go-licenses/blob/HEAD/LICENSE
+		// * https://github.com/Bobgy/go-licenses/v2/blob/HEAD/LICENSE
 		// points to latest commit of master branch.
 		// * https://github.com/google/licenseclassifier/blob/HEAD/LICENSE
 		// points to latest commit of main branch.
@@ -244,7 +244,7 @@ func (l *Library) FileURL(ctx context.Context, filePath string) (string, error) 
 		return "", wrap(err)
 	}
 	// TODO: there are still rare cases this may result in an incorrect URL.
-	// https://github.com/google/go-licenses/issues/73#issuecomment-1005587408
+	// https://github.com/Bobgy/go-licenses/v2/issues/73#issuecomment-1005587408
 	return remote.FileURL(relativePath), nil
 }
 
