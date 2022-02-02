@@ -37,6 +37,7 @@ func TestCsvCommandE2E(t *testing.T) {
 		{workdir: "testdata/modules/cli02"},
 		{workdir: "testdata/modules/vendored03"},
 		{workdir: "testdata/modules/replace04"},
+		{workdir: "testdata/modules/modinsubdir05"},
 	}
 	originalWorkDir, err := os.Getwd()
 	if err != nil {
