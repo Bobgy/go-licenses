@@ -26,7 +26,7 @@ lint:  FORCE
 tidy: FORCE
 	go mod tidy
 
-VERSION=v2.0.0-dev.0
+VERSION=v2.0.0-alpha.0
 
 # Release on github.
 # Note, edit the VERSION variable first.
