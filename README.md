@@ -1,5 +1,11 @@
 # Licenses tool
 
+## Fork in github.com/Bobgy/go-licenses/v2
+
+This is a fork of <github.com/google/go-licenses> based on [Bobgy's v2 proposal](https://github.com/google/go-licenses/issues/70).
+
+## Original README.md
+
 > This is not an officially supported Google product.
 
 `go-licenses` analyzes the dependency tree of a Go package/binary. It can output a
