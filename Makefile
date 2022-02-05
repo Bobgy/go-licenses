@@ -26,14 +26,14 @@ lint:  FORCE
 tidy: FORCE
 	go mod tidy
 
-VERSION=v2.0.0-alpha.1
+VERSION=v2.0.0-beta.0
 
 # Release on github.
 # Note, edit the VERSION variable first.
 release: update-main rename push-main FORCE
 	gh release create $(VERSION) \
+		--generate-notes \
 		--notes-file release_template.md \
-		--title "$(VERSION)" \
 		--prerelease
 
 update-main: FORCE
