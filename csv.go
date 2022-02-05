@@ -21,7 +21,7 @@ import (
 	"strings"
 
 	"github.com/golang/glog"
-	"github.com/google/go-licenses/licenses"
+	"github.com/Bobgy/go-licenses/v2/licenses"
 	"github.com/spf13/cobra"
 )
 
