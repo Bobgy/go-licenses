@@ -29,7 +29,7 @@ import (
 	// * therefore, go-licenses finds a LICENSE file at root of submodule and tries to guess its remote URL as root of submodule, while the actual LICENSE file is at root of repo
 	// Note, adopting pkgsite/source allowed us to get the correct tag `storage/v1.10.0` for this repo, but we still hit this LICENSE file path problem.
 	//
-	// More context in: https://github.com/google/go-licenses/issues/73#issuecomment-1019453152
+	// More context in: https://github.com/Bobgy/go-licenses/v2/issues/73#issuecomment-1019453152
 )
 
 func main() {
