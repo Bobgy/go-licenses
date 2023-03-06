@@ -12,8 +12,8 @@ require (
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/spf13/cobra v1.3.0
 	go.opencensus.io v0.23.0
-	golang.org/x/mod v0.5.1
-	golang.org/x/net v0.0.0-20211015210444-4f30a5c0130f
-	golang.org/x/tools v0.1.8
+	golang.org/x/mod v0.8.0
+	golang.org/x/net v0.8.0
+	golang.org/x/tools v0.6.0
 	gopkg.in/src-d/go-git.v4 v4.13.1
 )
